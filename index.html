@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="images/shopping-bag-icon.png"
+      type="image/x-icon"
+    />
+    <title>Attire Shop</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/responsive.css" />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <header>
+      <!-- <i class="fa-solid fa-bars" id="btn-toggle" tabindex="0"></i> -->
+      <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+      <a href="#">
+        <div class="logo-and-title">
+          <!-- <img src="images/shopping-bag-icon.png" alt="attire-logo" /> -->
+          <i class="fa-solid fa-bag-shopping" id="icon-logo"></i>
+          <h1>Attire</h1>
+        </div>
+      </a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#spacials">spacials</a></li>
+        <li><a href="#blogs">blogs</a></li>
+        <li><a href="#popular">popular</a></li>
+        <li><a href="#about">about us</a></li>
+      </ul>
+      <div class="menu-icon">
+        <div class="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="badge">5</span>
+        </div>
+        <div class="favorite">
+          <i class="fa-solid fa-heart"></i>
+          <span class="badge">2</span>
+        </div>
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Carousel Section -->
+      <div class="CSSgal">
+        <input type="radio" name="slider" id="s1" checked />
+        <input type="radio" name="slider" id="s2" />
+
+        <div class="slider">
+          <div class="slider-1">
+            <div class="centered">
+              <h3>Best Price & Offer</h3>
+              <h2>New Season</h2>
+              <button>Buy Now</button>
+            </div>
+          </div>
+          <div class="slider-2">
+            <div class="centered">
+              <h3>Discount Up To 40%</h3>
+              <h2>Grand sale Offer!</h2>
+              <button>Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="prevNext">
+          <div>
+            <label for="s2"><i class="fa-solid fa-chevron-left"></i></label
+            ><label for="s2"><i class="fa-solid fa-chevron-right"></i></label>
+          </div>
+          <div>
+            <label for="s1"><i class="fa-solid fa-chevron-left"></i></label
+            ><label for="s1"><i class="fa-solid fa-chevron-right"></i></label>
+          </div>
+        </div>
+        <script
+          src="https://kit.fontawesome.com/e2afa70641.js"
+          crossorigin="anonymous"
+        ></script>
+      </div>
+
+      <div class="container">
+        <!-- Collection Section -->
+        <div class="collection" id="collection">
+          <div class="collection-title">
+            <i class="vertical-line"></i>
+            <h1>New Collection</h1>
+          </div>
+          <div class="collection-tab">
+            <input type="radio" name="tab" id="tab1" checked />
+            <input type="radio" name="tab" id="tab2" />
+            <input type="radio" name="tab" id="tab3" />
+            <input type="radio" name="tab" id="tab4" />
+
+            <div class="tab-menu">
+              <label for="tab1"> All </label>
+              <label for="tab2"> Best Seller </label>
+              <label for="tab3"> Featured </label>
+              <label for="tab4"> New Arrival </label>
+            </div>
+
+            <div class="tabs">
+              <div class="tab-1">
+                <div class="row">
+                  <div class="card">
+                    <img
+                      src="images/c_formal_gray_shirt.png"
+                      alt="products"
+                    />
+                    <div class="badge">sale</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                  <div class="card">
+                    <img src="images/c_pant_girl.png" alt="products" />
+                    <div class="badge">sale</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                  <div class="card">
+                    <img src="images/c_polo-shirt.png" alt="products" />
+                    <div class="badge">sale</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                  <div class="card">
+                    <img src="images/c_shirt-girl.png" alt="products" />
+                    <div class="badge">sale</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                  <div class="card">
+                    <img src="images/c_t-shirt_men.png" alt="products" />
+                    <div class="badge">sale</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                  <div class="card">
+                    <img src="images/c_tunic-shirt_girl.png" alt="products" />
+                    <div class="badge">sale</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                  <div class="card">
+                    <img src="images/c_undershirt.png" alt="products" />
+                    <div class="badge">sale</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                  <div class="card">
+                    <img src="images/c_western-shirt.png" alt="products" />
+                    <div class="badge">sale</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-2">
+                <div class="row">
+                  <div class="card">
+                    <img
+                      src="images/c_formal_gray_shirt.png"
+                      alt="products"
+                    />
+                    <div class="badge">best</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                  <div class="card">
+                    <img src="images/c_pant_girl.png" alt="products" />
+                    <div class="badge">best</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                  <div class="card">
+                    <img src="images/c_polo-shirt.png" alt="products" />
+                    <div class="badge">best</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                  <div class="card">
+                    <img src="images/c_shirt-girl.png" alt="products" />
+                    <div class="badge">best</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                  <div class="card">
+                    <img src="images/c_t-shirt_men.png" alt="products" />
+                    <div class="badge">best</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                  <div class="card">
+                    <img src="images/c_tunic-shirt_girl.png" alt="products" />
+                    <div class="badge">best</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                  <div class="card">
+                    <img src="images/c_undershirt.png" alt="products" />
+                    <div class="badge">best</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                  <div class="card">
+                    <img src="images/c_western-shirt.png" alt="products" />
+                    <div class="badge">best</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-3">
+                <div class="row">
+                  <div class="card">
+                    <img
+                      src="images/c_formal_gray_shirt.png"
+                      alt="products"
+                    />
+                    <div class="badge">feat</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                  <div class="card">
+                    <img src="images/c_pant_girl.png" alt="products" />
+                    <div class="badge">feat</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                  <div class="card">
+                    <img src="images/c_polo-shirt.png" alt="products" />
+                    <div class="badge">feat</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                  <div class="card">
+                    <img src="images/c_shirt-girl.png" alt="products" />
+                    <div class="badge">feat</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                  <div class="card">
+                    <img src="images/c_t-shirt_men.png" alt="products" />
+                    <div class="badge">feat</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                  <div class="card">
+                    <img src="images/c_tunic-shirt_girl.png" alt="products" />
+                    <div class="badge">feat</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                  <div class="card">
+                    <img src="images/c_undershirt.png" alt="products" />
+                    <div class="badge">feat</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                  <div class="card">
+                    <img src="images/c_western-shirt.png" alt="products" />
+                    <div class="badge">feat</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-4">
+                <div class="row">
+                  <div class="card">
+                    <img
+                      src="images/c_formal_gray_shirt.png"
+                      alt="products"
+                    />
+                    <div class="badge">new</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                  <div class="card">
+                    <img src="images/c_pant_girl.png" alt="products" />
+                    <div class="badge">new</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                  <div class="card">
+                    <img src="images/c_polo-shirt.png" alt="products" />
+                    <div class="badge">new</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                  <div class="card">
+                    <img src="images/c_shirt-girl.png" alt="products" />
+                    <div class="badge">new</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                  <div class="card">
+                    <img src="images/c_t-shirt_men.png" alt="products" />
+                    <div class="badge">new</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                  <div class="card">
+                    <img src="images/c_tunic-shirt_girl.png" alt="products" />
+                    <div class="badge">new</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                  <div class="card">
+                    <img src="images/c_undershirt.png" alt="products" />
+                    <div class="badge">new</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                  <div class="card">
+                    <img src="images/c_western-shirt.png" alt="products" />
+                    <div class="badge">new</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-name">Gray Shirt</div>
+                    <div class="product-price">$45.50</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="spacail" id="spacials">
+          <div class="collection-title">
+            <i class="vertical-line"></i>
+            <h1>Spacial Selection</h1>
+          </div>
+
+          <div class="row">
+            <div class="card">
+              <img src="images/special_product_1.jpg" alt="products" />
+              <div class="spacail-badge">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <div class="product-name" style="margin-top: 10px">
+                Gray Shirt
+              </div>
+              <div class="product-price">$45.50</div>
+              <button class="btn-add">Add to Cart</button>
+            </div>
+            <div class="card">
+              <img src="images/special_product_2.jpg" alt="products" />
+              <div class="spacail-badge">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <div class="product-name" style="margin-top: 10px">
+                Gray Shirt
+              </div>
+              <div class="product-price">$45.50</div>
+              <button class="btn-add">Add to Cart</button>
+            </div>
+            <div class="card">
+              <img src="images/special_product_3.jpg" alt="products" />
+              <div class="spacail-badge">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <div class="product-name" style="margin-top: 10px">
+                Gray Shirt
+              </div>
+              <div class="product-price">$45.50</div>
+              <button class="btn-add">Add to Cart</button>
+            </div>
+            <div class="card">
+              <img src="images/special_product_4.jpg" alt="products" />
+              <div class="spacail-badge">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <div class="product-name" style="margin-top: 10px">
+                Gray Shirt
+              </div>
+              <div class="product-price">$45.50</div>
+              <button class="btn-add">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog banner -->
+      <div class="blog-banner" id="blogs">
+        <div class="centered">
+          <h3>Discount Up To 40%</h3>
+          <h2>Grand sale Offer!</h2>
+          <button>Buy Now</button>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="blog">
+          <div class="collection-title">
+            <i class="vertical-line"></i>
+            <h1>Our Latest Blog</h1>
+          </div>
+          <div class="blog-card">
+            <div class="card">
+              <img src="images/blog_1.jpg" alt="products" />
+              <div class="content">
+                <div class="blog-title">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing
+                </div>
+                <div class="blog-des">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti aut sunt dolorum eaque ducimus voluptate totam
+                  nesciunt quas adipisci impedit, pariatur, omnis fugiat
+                  necessitatibus minus repellendus possimus ut, quia officiis!
+                </div>
+                <div class="author"><b>Author: </b> John Doe</div>
+                <button>Read</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/blog_2.jpg" alt="products" />
+              <div class="content">
+                <div class="blog-title">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing
+                </div>
+                <div class="blog-des">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti aut sunt dolorum eaque ducimus voluptate totam
+                  nesciunt quas adipisci impedit, pariatur, omnis fugiat
+                  necessitatibus minus repellendus possimus ut, quia officiis!
+                </div>
+                <div class="author"><b>Author: </b> John Doe</div>
+                <button>Read</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/blog_3.jpg" alt="products" />
+              <div class="content">
+                <div class="blog-title">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing
+                </div>
+                <div class="blog-des">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti aut sunt dolorum eaque ducimus voluptate totam
+                  nesciunt quas adipisci impedit, pariatur, omnis fugiat
+                  necessitatibus minus repellendus possimus ut, quia officiis!
+                </div>
+                <div class="author"><b>Author: </b> John Doe</div>
+                <button>Read</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/blog_1.jpg" alt="products" />
+              <div class="content">
+                <div class="blog-title">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing
+                </div>
+                <div class="blog-des">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti aut sunt dolorum eaque ducimus voluptate totam
+                  nesciunt quas adipisci impedit, pariatur, omnis fugiat
+                  necessitatibus minus repellendus possimus ut, quia officiis!
+                </div>
+                <div class="author"><b>Author: </b> John Doe</div>
+                <button>Read</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/blog_2.jpg" alt="products" />
+              <div class="content">
+                <div class="blog-title">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing
+                </div>
+                <div class="blog-des">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti aut sunt dolorum eaque ducimus voluptate totam
+                  nesciunt quas adipisci impedit, pariatur, omnis fugiat
+                  necessitatibus minus repellendus possimus ut, quia officiis!
+                </div>
+                <div class="author"><b>Author: </b> John Doe</div>
+                <button>Read</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/blog_3.jpg" alt="products" />
+              <div class="content">
+                <div class="blog-title">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing
+                </div>
+                <div class="blog-des">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti aut sunt dolorum eaque ducimus voluptate totam
+                  nesciunt quas adipisci impedit, pariatur, omnis fugiat
+                  necessitatibus minus repellendus possimus ut, quia officiis!
+                </div>
+                <div class="author"><b>Author: </b> John Doe</div>
+                <button>Read</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Popular banner -->
+      <div class="popular-banner" id="popular">
+        <div class="centered">
+          <h3>Discount Up To 40%</h3>
+          <h2>Grand sale Offer!</h2>
+          <button>Buy Now</button>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="popular">
+          <div class="collection-title">
+            <i class="vertical-line"></i>
+            <h1>Popular of This Year</h1>
+          </div>
+          <div class="popular-products">
+            <div class="top-rated">
+              <div class="title">Top Rated</div>
+              <div class="card">
+                <img src="images/top_rated_1.jpg" alt="top-rated" />
+                <div class="content">
+                  <div class="name">Blue Shirt</div>
+                  <div class="price">$ 20</div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/top_rated_2.jpg" alt="top-rated" />
+                <div class="content">
+                  <div class="name">Blue Shirt</div>
+                  <div class="price">$ 20</div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/top_rated_3.jpg" alt="top-rated" />
+                <div class="content">
+                  <div class="name">Blue Shirt</div>
+                  <div class="price">$ 20</div>
+                </div>
+              </div>
+            </div>
+            <div class="best-selling">
+              <div class="title">Best Selling</div>
+              <div class="card">
+                <img src="images/best_selling_1.jpg" alt="best-selling" />
+                <div class="content">
+                  <div class="name">Blue Shirt</div>
+                  <div class="price">$ 20</div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/best_selling_2.jpg" alt="best-selling" />
+                <div class="content">
+                  <div class="name">Blue Shirt</div>
+                  <div class="price">$ 20</div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/best_selling_3.jpg" alt="best-selling" />
+                <div class="content">
+                  <div class="name">Blue Shirt</div>
+                  <div class="price">$ 20</div>
+                </div>
+              </div>
+            </div>
+            <div class="on-sale">
+              <div class="title">On Sale</div>
+              <div class="card">
+                <img src="images/on_sale_1.jpg" alt="on-sale" />
+                <div class="content">
+                  <div class="name">Blue Shirt</div>
+                  <div class="price">$ 20</div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/on_sale_2.jpg" alt="on-sale" />
+                <div class="content">
+                  <div class="name">Blue Shirt</div>
+                  <div class="price">$ 20</div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/on_sale_3.jpg" alt="on-sale" />
+                <div class="content">
+                  <div class="name">Blue Shirt</div>
+                  <div class="price">$ 20</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact">
+          <div class="collection-title">
+            <i class="vertical-line"></i>
+            <h1>Newsletter Subscription</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-form" id="about">
+        <div class="desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
+          voluptas ducimus perferendis tempore soluta recusandae enim optio
+          sit, repudiandae ad, excepturi ut suscipit libero quis illo adipisci
+          autem eligendi. Cupiditate?
+        </div>
+        <form action="#">
+          <input
+            type="email"
+            autocomplete="off"
+            placeholder="Enter Your Email..."
+          />
+          <button class="btn-subscribe">Subscribe</button>
+        </form>
+      </div>
+
+      <footer>
+        <div class="block-head">
+          <div class="footer-menu left">
+            <div>
+              <div class="title sp-title">ATTIRE</div>
+              <ul>
+                <li><a href="#">Lorem ipsum dolor, sit</a></li>
+                <li><a href="#">Lorem, ipsum dolor sit amet</a></li>
+                <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="title">LINK</div>
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-right"></i> Home</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-right"></i> Collection</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-right"></i> Blogs</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-right"></i> About Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-menu right">
+            <div>
+              <div class="title">Contact Us</div>
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-map-location-dot"></i> Albert
+                    Street, New York, AS 756, United States of America</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-envelope"></i>
+                    attire.support@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-phone"></i> +9786 6776 236</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <div class="title">Follow Us</div>
+              <ul class="follow-us">
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/e2afa70641.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

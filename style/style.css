@@ -1,0 +1,724 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --base-color: #cc0047;
+    --secondary-color: #303030;
+}
+html,
+body {
+    font-family: "Inter", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    background: #ffffff99;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--secondary-color);
+
+}
+
+header a .logo-and-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo-and-title h1 {
+    font-family: "Playfair Display", serif !important;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+header .logo-and-title #icon-logo,
+.menu-toggle {
+    font-size: 1.4em;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+header ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+header ul li a {
+    text-transform: uppercase;
+}
+
+header .menu-icon {
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+}
+
+header .menu-icon div {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+header .menu-icon .cart .badge,
+header .menu-icon .favorite .badge {
+    position: block;
+    margin-left: 2px;
+    margin-top: -30px;
+    background-color: var(--base-color);
+    color: white;
+    border-radius: 2px;
+    padding: 3px 5px;
+    font-size: .5em;
+}
+
+/* Slider */
+.CSSgal {
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+
+}
+
+/* SLIDER */
+.CSSgal .slider {
+    height: 90vh;
+    white-space: nowrap;
+    font-size: 0;
+    transition: 0.8s;
+}
+
+.CSSgal .slider .slider-1 {
+    background: url('../images/banner-img-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.CSSgal .slider .slider-2 {
+    background: url('../images/offer_img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* SLIDES */
+.CSSgal .slider>* {
+    font-size: 1rem;
+    display: inline-block;
+    white-space: normal;
+    vertical-align: top;
+    height: 100%;
+    width: 100%;
+    background: none 50% no-repeat;
+    background-size: cover;
+}
+
+/* PREV/NEXT, CONTAINERS & ANCHORS */
+.CSSgal .prevNext {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    width: 100%;
+    height: 0;
+}
+
+.CSSgal .prevNext>div+div {
+    visibility: hidden;
+}
+
+.CSSgal .prevNext label {
+    color: #fff;
+    padding: 10px;
+    margin: 0 50px;
+    position: absolute;
+    line-height: 60px;
+    font-weight: bolder;
+    /* If you want to place numbers */
+    text-align: center;
+    opacity: 0.8;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    cursor: pointer;
+}
+
+.CSSgal .prevNext label:hover {
+    opacity: 1;
+}
+
+.CSSgal .prevNext label+label {
+    left: auto;
+    right: 0;
+}
+
+/* PREV/NEXT CONTAINERS VISIBILITY */
+/* ALL: */
+
+.CSSgal>input[type=radio] {
+    display: none;
+}
+
+.CSSgal>input[type=radio]:checked~.prevNext>* {
+    visibility: hidden;
+}
+
+/* ACTIVE: */
+#s1:checked~.prevNext>*:nth-child(1) {
+    visibility: visible;
+}
+
+#s2:checked~.prevNext>*:nth-child(2) {
+    visibility: visible;
+}
+
+/* SLIDER ANIMATION POSITIONS */
+#s1:checked~.slider {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+}
+
+#s2:checked~.slider {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+
+
+
+/* YOU'RE THE DESIGNER! 
+   ____________________
+   All above was mainly to get it working :)
+   CSSgal CUSTOM STYLES / OVERRIDES HERE: */
+
+.CSSgal .slider .centered {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.CSSgal .slider .centered h3 {
+    font-weight: normal;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5);
+}
+
+.CSSgal .slider div .centered h2 {
+    text-transform: uppercase;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-weight: 200;
+    letter-spacing: -0.06em;
+    word-spacing: 0.2em;
+    font-size: 3em;
+    font-family: "Playfair Display", serif;
+    letter-spacing: .1em;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.CSSgal .slider div .centered button {
+    margin-top: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1em;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 20px;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.container {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.collection-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.collection-title i {
+    border-left: 5px solid #fd3232;
+    height: 45px;
+}
+
+.collection-title h1 {
+    font-family: "Inter", serif;
+    font-weight: 500;
+    font-size: 2.2em;
+    color: #363636;
+}
+
+/* For tab style */
+.collection-tab {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+/* SLIDER */
+.collection-tab input[type="radio"] {
+    display: none;
+}
+
+#tab1:checked~.tabs {
+    transform: translateX(0%);
+}
+
+#tab2:checked~.tabs {
+    transform: translateX(-100%);
+}
+
+#tab3:checked~.tabs {
+    transform: translateX(-200%);
+}
+
+#tab4:checked~.tabs {
+    transform: translateX(-300%);
+}
+
+#tab1:checked~.tab-menu label[for="tab1"] {
+    border: none;
+    background: var(--base-color);
+    color: white;
+}
+
+#tab2:checked~.tab-menu label[for="tab2"] {
+    border: none;
+    background: var(--base-color);
+    color: white;
+}
+
+#tab3:checked~.tab-menu label[for="tab3"] {
+    border: none;
+    background: var(--base-color);
+    color: white;
+}
+
+#tab4:checked~.tab-menu label[for="tab4"] {
+    border: none;
+    background: var(--base-color);
+    color: white;
+}
+
+
+.collection-tab .tabs {
+    white-space: nowrap;
+    font-size: 0;
+    transition: 0.3s;
+}
+
+.collection-tab .tabs>* {
+    font-size: 1rem;
+    display: inline-block;
+    white-space: normal;
+    vertical-align: top;
+    width: 100%;
+    background: none 50% no-repeat;
+    background-size: cover;
+    padding: 10px;
+}
+
+.collection-tab .tab-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.collection-tab .tab-menu label {
+    cursor: pointer;
+    border: 1px solid #363636;
+    color: #363636;
+    padding: 8px 20px;
+    border-radius: 40px;
+}
+
+
+/* Collection Card Style */
+.row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card .badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--base-color);
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.7em;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    text-transform: lowercase;
+}
+
+.card .spacail-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: var(--base-color);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.8em;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    text-transform: lowercase;
+}
+
+.card .stars {
+    margin-top: 10px;
+    text-align: center;
+    color: var(--base-color);
+    font-size: 0.9em;
+}
+
+.card .product-name {
+    padding: 5px;
+    text-align: center;
+    font-size: .9em;
+    color: var(--secondary-color);
+}
+
+.card .product-price {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1em;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.card .btn-add {
+    margin: 0 auto;
+    padding: 8px 30px;
+    border-radius: 40px;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    background: none;
+    cursor: pointer;
+}
+
+.card .btn-add:hover {
+    transition: all .3s ease-in-out;
+    background-color: var(--base-color);
+    color: #fff;
+    border: 1px solid var(--base-color);
+    outline: none;
+}
+
+/* Banner Blog */
+.blog-banner {
+    margin-top: 50px;
+    background: url('../images/offer_img.jpg') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.popular-banner {
+    margin-top: 50px;
+    background: url('../images/about_us.jpg') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.blog-banner .centered,
+.popular-banner .centered {
+    position: absolute;
+    right: 60%;
+    color: white;
+}
+
+.blog-banner .centered h3,
+.popular-banner .centered h3 {
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+.blog-banner .centered h2,
+.popular-banner .centered h2 {
+    text-transform: capitalize;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-weight: 200;
+    font-size: 3em;
+    font-family: "Playfair Display", serif;
+    letter-spacing: .1em;
+    font-weight: bolder;
+}
+
+.blog-banner .centered button,
+.popular-banner .centered button {
+    margin-top: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 1em;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 20px;
+    color: var(--secondary-color);
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.blog,
+.popular {
+    margin-top: 40px;
+}
+
+.blog .blog-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.blog .blog-card .content {
+    margin-bottom: 20px;
+}
+
+.blog .blog-card .content .blog-title {
+    margin: 15px 0;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.blog .blog-card .content .blog-des {
+    color: grey;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.blog .blog-card .content .author {
+    color: grey;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.blog .blog-card .content button {
+    border-radius: 40px;
+    border: 1px solid var(--secondary-color);
+    padding: 8px 40px;
+    color: var(--secondary-color);
+    cursor: pointer;
+    background: none;
+}
+
+.blog .blog-card .content button:hover {
+    border-radius: 40px;
+    border: 1px solid var(--base-color);
+    background: var(--base-color);
+    padding: 8px 40px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+}
+
+/* Popular */
+.popular-products {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.popular-products .top-rated,
+.popular-products .best-selling,
+.popular-products .on-sale {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.popular-products .top-rated .title,
+.popular-products .best-selling .title,
+.popular-products .on-sale .title {
+    margin: 10px 0;
+    color: var(--secondary-color);
+    font-size: 1.1em;
+}
+
+.popular-products .top-rated .card,
+.popular-products .best-selling .card,
+.popular-products .on-sale .card {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.popular-products .top-rated img,
+.popular-products .best-selling img,
+.popular-products .on-sale img {
+    width: 18%
+}
+
+.popular-products .top-rated .content,
+.popular-products .best-selling .content,
+.popular-products .on-sale .content {
+    color: var(--secondary-color);
+    font-size: .9em;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Form Subscribe */
+.content-form {
+    padding: 20px;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+
+.content-form form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 0;
+    width: 100%;
+}
+
+.content-form form input {
+    border-top: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+    border-left: 1px solid var(--secondary-color);
+    border-right: none;
+    background: none;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 40px 0 0 40px;
+    width: 100%;
+}
+
+.content-form form button {
+    border-top: 1px solid var(--base-color);
+    border-bottom: 1px solid var(--base-color);
+    border-left: none;
+    border-right: 1px solid var(--base-color);
+    border-radius: 0 40px 40px 0;
+    background: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: var(--base-color);
+    color: white;
+    font-size: 1em;
+}
+
+
+/* Footer */
+.block-head {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+    background: #252424;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.block-head .footer-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    width: 50%;
+}
+
+.block-head .footer-menu .title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: white;
+}
+
+.block-head .footer-menu .sp-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: white;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 3px;
+}
+
+.block-head .footer-menu div ul {
+    padding: 0;
+    list-style: none;
+}
+
+.block-head .footer-menu div .follow-us {
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+.block-head .footer-menu div ul li {
+    margin-bottom: 5px;
+}
+
+.block-head .footer-menu div ul li a {
+    text-decoration: none;
+    color: #5b5b5b;
+}
