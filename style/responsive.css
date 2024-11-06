@@ -16,6 +16,25 @@
         display: none !important;
     }
 
+    
+    header:focus-within ul {
+        display: block !important;
+        position: absolute;
+        top: 75%;
+        left: 0;
+        background: #ffffff;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        display: flex !important;
+        flex-direction: column;
+        gap: 20px;
+
+        animation: fadeIn 0.3s;
+    }
+
     @keyframes fadeIn {
         from {
             opacity: 0;
@@ -32,27 +51,13 @@
         font-size: 1.3em;
     }
 
-    .menu-toggle {
+    #btn-toggle {
         display: block;
     }
 
-    .menu-toggle:focus~ul {
+    #btn-toggle:focus~ul:focus-within {
         display: block !important;
         z-index: 1;
-        display: block !important;
-        position: absolute;
-        top: 75%;
-        left: 0;
-        background: #ffffff;
-        padding: 20px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-        display: flex !important;
-        flex-direction: column;
-        gap: 20px;
-        animation: fadeIn 0.3s;
     }
 
     /* Slider */
@@ -286,6 +291,24 @@
         display: none !important;
     }
 
+    header:focus-within ul {
+        display: block !important;
+        position: absolute;
+        top: 75%;
+        left: 0;
+        background: #ffffff;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        display: flex !important;
+        flex-direction: column;
+        gap: 20px;
+
+        animation: fadeIn 0.3s;
+    }
+
     @keyframes fadeIn {
         from {
             opacity: 0;
@@ -302,28 +325,15 @@
         font-size: 1.3em;
     }
 
-    .menu-toggle {
+    #btn-toggle {
         display: block;
     }
 
-    .menu-toggle:focus~ul {
+    #btn-toggle:focus~ul:focus-within {
         display: block !important;
         z-index: 1;
-        display: block !important;
-        position: absolute;
-        top: 75%;
-        left: 0;
-        background: #ffffff;
-        padding: 20px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-        display: flex !important;
-        flex-direction: column;
-        gap: 20px;
-        animation: fadeIn 0.3s;
     }
+
 
     /* Slider */
     .CSSgal {
@@ -563,6 +573,25 @@
         display: none !important;
     }
 
+    
+    header:focus-within ul {
+        display: block !important;
+        position: absolute;
+        top: 75%;
+        left: 0;
+        background: #ffffff;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        display: flex !important;
+        flex-direction: column;
+        gap: 20px;
+
+        animation: fadeIn 0.3s;
+    }
+
     @keyframes fadeIn {
         from {
             opacity: 0;
@@ -579,27 +608,13 @@
         font-size: 1.3em;
     }
 
-    .menu-toggle {
+    #btn-toggle {
         display: block;
     }
 
-    .menu-toggle:focus~ul {
+    #btn-toggle:focus~ul:focus-within {
         display: block !important;
         z-index: 1;
-        display: block !important;
-        position: absolute;
-        top: 75%;
-        left: 0;
-        background: #ffffff;
-        padding: 20px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-        display: flex !important;
-        flex-direction: column;
-        gap: 20px;
-        animation: fadeIn 0.3s;
     }
 
     /* Slider */

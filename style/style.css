@@ -48,11 +48,11 @@ header .logo-and-title h1 {
 }
 
 header .logo-and-title #icon-logo,
-.menu-toggle {
+#btn-toggle {
     font-size: 1.4em;
 }
 
-.menu-toggle {
+#btn-toggle {
     display: none;
     cursor: pointer;
     border: none;
